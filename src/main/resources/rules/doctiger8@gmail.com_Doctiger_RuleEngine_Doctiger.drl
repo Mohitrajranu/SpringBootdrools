@@ -1,0 +1,11 @@
+package com.bizlem;
+
+import com.bizlem.drools.model.VariablePOJO;
+
+rule Rule_Doctiger_1
+dialect "mvel"
+when
+$variable : VariablePOJO (noOfProperties  == 2  && project_name in ("Doctiger" ) )
+then
+$variable.template_name = "doctigertemplate";
+end

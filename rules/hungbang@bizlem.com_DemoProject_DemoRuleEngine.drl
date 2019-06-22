@@ -1,0 +1,12 @@
+package com.bizlem;
+
+import java.util.Map;
+
+rule rule1
+dialect "mvel"
+when
+$map: Map ($map.get("account_name")  in ("acc1")  && $map.get("account_Date")  == 1486054800000  && $map.get("account_open_Date")  == 1420131600000  && $map.get("account_BillingCity")  in ("Mumbai") )
+then
+$map.put("output1","Send Technician");
+$map.put("output2","Charge 500");
+end

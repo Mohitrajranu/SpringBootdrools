@@ -1,0 +1,11 @@
+package com.bizlem;
+
+import java.util.Map;
+
+rule rules123
+dialect "mvel"
+when
+$map: Map ($map.get("account_id") >=1298998800000  && $map.get("account_id") <=1393693200000  && $map.get("city")  in ("A") )
+then
+$map.put("Output_F1","YesF1");
+end

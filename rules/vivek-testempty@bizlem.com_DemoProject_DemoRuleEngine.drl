@@ -1,0 +1,12 @@
+package com.bizlem;
+
+import java.util.Map;
+
+rule rule1
+dialect "mvel"
+when
+$map: Map ($map.get("account_type")  in ("acc4")  && $map.get("account_name")  in ("Mumbai1232") )
+then
+$map.put("output1","Technician");
+$map.put("output2","Charge");
+end

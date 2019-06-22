@@ -1,0 +1,100 @@
+{
+	"current_sfdc_login_user_email": "vivek@bizlem.com",
+	"current_sfdc_login_user_name": "vivek@bizlem.com",
+	"project_name": "DemoProject",
+	"rule_engine_name": "DemoRuleEngine",
+	"rules": [
+		{
+			"sr_no": 1,
+			"rule_name": "rule1",
+			"input_fields": [
+				{
+					"account_Name": "acc1,acc2,acc3",
+					"type": "String"
+				},
+				{
+					"account_Type": "Saving",
+					"type": "String"
+				},
+				{
+					"account_BillingCity": "Mumbai,Delhi",
+					"type": "String"
+				},
+				{
+					"account_BillingCountry": "IN,US",
+					"type": "String "
+				},
+				{
+					"account_AnnualRevenue": "<45000",
+					"type": "Integer "
+				},
+				{
+					"contact_Name": "Styen",
+					"type": "String "
+				},
+				{
+					"contact_Email": "Styen@bizlem.com",
+					"type": "String "
+				},
+				{
+					"case_CaseNumber": "201345",
+					"type": "Integer "
+				},
+				{
+					"case_Subject": "Phone is not Working",
+					"type": "String"
+				}
+			],
+			"output_fields": [
+				{
+					"output1": "Send Technician",
+					"type": "String"
+				},
+				{
+					"output2": "Charge 500",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"sr_no": 2,
+			"rule_name": "rule2",
+			"input_fields": [
+				{
+					"account_Name": "acc1,acc2,acc3",
+					"type": "String"
+				},
+				{
+					"account_Type": "Saving",
+					"type": "String"
+				},
+				{
+					"account_BillingCity": "Mumbai,Delhi",
+					"type": "String"
+				},
+				{
+					"test_Variable": "IN,US",
+					"type": "String"
+				}
+			],
+			"output_fields": [
+				{
+					"output_field_name_1": "output_field_value_1",
+					"type": "String"
+				},
+				{
+					"output_field_name_2": "output_field_value_2",
+					"type": "String"
+				},
+				{
+					"output_field_name_3": "output_field_value_3",
+					"type": "String"
+				},
+				{
+					"output_field_name_4": "output_field_value_4",
+					"type": "String"
+				}
+			]
+		}
+	]
+}

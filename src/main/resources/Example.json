@@ -1,0 +1,91 @@
+{
+	"current_sfdc_login_user_email": "",
+	"current_sfdc_login_user_name": "",
+	"project_name": "DemoProject",
+	"rules": [
+		{
+			"sr_no": 1,
+			"rule_name": "rule1",
+			"input_fields": [
+				{
+					"input_field_name_1": "input_field_value_1",
+					"input_field_type_1": "Intger"
+				},
+				{
+					"input_field_name_2": "input_field_value_2",
+					"input_field_type_2": "String"
+				},
+				{
+					"input_field_name_3": "input_field_value_3",
+					"input_field_type_3": "byte"
+				},
+				{
+					"input_field_name_n": "input_field_value_4",
+					"input_field_type_n": "Boolean "
+				},
+				{
+					"input_field_name_n": "input_field_value_n",
+					"input_field_type_n": "double "
+				}
+			],
+			"output_fields": [
+				{
+					"output_field_name_1": "output_field_value_1",
+					"output_field_type_1": "output_field_type_value_1"
+				},
+				{
+					"output_field_name_2": "output_field_value_2",
+					"output_field_type_2": "output_field_type_value_2"
+				},
+				{
+					"output_field_name_3": "output_field_value_3",
+					"output_field_type_3": "output_field_type_value_3"
+				},
+				{
+					"output_field_name_4": "output_field_value_4",
+					"output_field_type_4": "output_field_type_value_4"
+				}
+			]
+		},
+		{
+			"sr_no": 2,
+			"rule_name": "rule2",
+			"input_fields": [
+				{
+					"input_field_name_1": "input_field_value_1",
+					"input_field_type_1": "Boolean"
+				},
+				{
+					"input_field_name_2": "input_field_value_2",
+					"input_field_type_2": "Byte"
+				},
+				{
+					"input_field_name_3": "input_field_value_3",
+					"input_field_type_2": "String"
+				},
+				{
+					"input_field_name_n": "input_field_value_n",
+					"input_field_type_n": "Intger"
+				}
+			],
+			"output_fields": [
+				{
+					"output_field_name_1": "output_field_value_1",
+					"output_field_type_1": "output_field_type_value_1"
+				},
+				{
+					"output_field_name_2": "output_field_value_2",
+					"output_field_type_2": "output_field_type_value_2"
+				},
+				{
+					"output_field_name_3": "output_field_value_3",
+					"output_field_type_3": "output_field_type_value_3"
+				},
+				{
+					"output_field_name_4": "output_field_value_4",
+					"output_field_type_4": "output_field_type_value_4"
+				}
+			]
+		}
+	]
+}

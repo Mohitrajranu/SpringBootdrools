@@ -1,0 +1,63 @@
+package com.bizlem;
+
+import com.bizlem.drools.model.VariablePOJO;
+
+rule Clause_Rule_1
+dialect "mvel"
+when
+$variable : VariablePOJO (propertyType in ("Villa" )  && project in ("P1" )  && facing in ("North" )  && buyerNationality in ("Chinese" )  && bedroomType in ("4 bhk" ) )
+then
+$variable.clause1 = "The Sale";
+$variable.clause2 = "Parking";
+$variable.clause5 = "Transfer of Title";
+$variable.pr_possession_occupation = "30 days";
+$variable.clause3 = "Purchase Price & Payment";
+$variable.clause4 = "Possession and Risk";
+$variable.pr_Anticipated_Comletion_Date = "12 months";
+$variable.ppp_delaypenalty = "1%";
+$variable.pr_delaypenalty = "2%";
+$variable.tt_registration_fee_document_penalty = "4%";
+$variable.tt_registration_fee_document_within = "35 days";
+$variable.tt_registration_fee_document_penalty_days = "60 days";
+$variable.tt_property_registration_fee = "4%";
+end
+
+rule Clause_Rule_2
+dialect "mvel"
+when
+$variable : VariablePOJO (propertyType in ("Villa" )  && project in ("P1" )  && facing in ("North" )  && buyerNationality in ("Indian" )  && bedroomType in ("2 bhk" ) )
+then
+$variable.clause1 = "The Sale";
+$variable.clause2 = "Parking";
+$variable.clause5 = "Transfer of Title";
+$variable.pr_possession_occupation = "28 days";
+$variable.clause3 = "Purchase Price & Payment";
+$variable.clause4 = "Possession and Risk";
+$variable.pr_Anticipated_Comletion_Date = "6 months";
+$variable.ppp_delaypenalty = "2%";
+$variable.pr_delaypenalty = "4%";
+$variable.tt_registration_fee_document_penalty = "5%";
+$variable.tt_registration_fee_document_within = "20 days";
+$variable.tt_registration_fee_document_penalty_days = "40 days";
+$variable.tt_property_registration_fee = "5%";
+end
+
+rule Clause_Rule_3
+dialect "mvel"
+when
+$variable : VariablePOJO (propertyType in ("Flat" )  && project in ("P1" )  && facing in ("East" )  && buyerNationality in ("Chinese" )  && bedroomType in ("2 bhk" ) )
+then
+$variable.clause1 = "The Sale";
+$variable.clause2 = "NA";
+$variable.clause5 = "Transfer of Title";
+$variable.pr_possession_occupation = "15 days";
+$variable.clause3 = "Purchase Price & Payment";
+$variable.clause4 = "Possession and Risk";
+$variable.pr_Anticipated_Comletion_Date = "8 months";
+$variable.ppp_delaypenalty = "3%";
+$variable.pr_delaypenalty = "5%";
+$variable.tt_registration_fee_document_penalty = "2%";
+$variable.tt_registration_fee_document_within = "15 days";
+$variable.tt_registration_fee_document_penalty_days = "30 days";
+$variable.tt_property_registration_fee = "2%";
+end

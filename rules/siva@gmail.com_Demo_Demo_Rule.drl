@@ -1,0 +1,12 @@
+package com.bizlem;
+
+import java.util.Map;
+
+rule project_siva
+dialect "mvel"
+when
+$map: Map ($map.get("case_name")  in ("save")  && $map.get("account_valus") <=45  && $map.get("bizlem_id") >=32  && $map.get("id")  == 101 )
+then
+$map.put("output1","Bizlem");
+$map.put("output2","4934");
+end
